@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDM Hub — Seguros e despachante em um só painel</title>
+<meta name="description" content="Apólices, renovações, licenciamento, despachante e comissões da sua corretora em um só lugar, sem planilha. Oferta de lançamento: R$ 67/mês.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5fae'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='bold' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/geist-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="MDM Hub, início">
+    <span class="brand-mark">M</span>
+    <span class="brand-name">MDM Hub<small>Seguros e despachante</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Seções">
+    <a href="#produto">O sistema</a>
+    <a href="#despachante">Despachante</a>
+    <a href="#como">Como funciona</a>
+    <a href="#preco">Preço</a>
+    <a href="#faq">Dúvidas</a>
+  </nav>
+  <a class="btn btn-primary btn-sm" href="#assinar">Assinar</a>
+</header>
+
+<main id="top">
+  <!-- HERO: split, conteúdo à esquerda, produto à direita -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">MDM Hub · Feito para corretoras</p>
+        <h1 class="reveal" style="--d:.06s">Sua carteira de seguros e despachante, <em>sem planilha</em>.</h1>
+        <p class="hero-sub reveal" style="--d:.12s">Apólices, renovações, licenciamento do Detran e comissões em um só painel. Nada de vencimento perdido.</p>
+        <div class="hero-cta reveal" style="--d:.18s">
+          <a class="btn btn-primary btn-lg" href="#assinar">Assinar por R$ 67/mês</a>
+          <a class="btn btn-ghost btn-lg" href="#produto">Ver o sistema por dentro</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" style="--d:.2s">
+        <figure class="shot shot-hero">
+          <img src="img/dash.webp" alt="Tela do MDM Hub: painel com prêmios comercializados, gráfico de vendas dos últimos 6 meses e cartões de clientes, apólices e comissões" width="1280" height="648" fetchpriority="high">
+          <figcaption class="float-badge fb-1"><strong>Vence em 12 dias</strong>Renovação aberta em 1 clique</figcaption>
+          <figcaption class="float-badge fb-2"><strong>R$ 2.043,75</strong>comissões previstas no mês</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="hero-fade" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROVA: o que o sistema cobre, em linha corrida -->
+  <section class="strip" aria-label="O que o MDM Hub cobre">
+    <div class="wrap strip-row reveal">
+      <span>Apólices e vigências</span><i></i>
+      <span>Renovações com histórico</span><i></i>
+      <span>Licenciamento por final de placa</span><i></i>
+      <span>Serviços de despachante</span><i></i>
+      <span>Comissões e recebimentos</span><i></i>
+      <span>Auditoria de tudo</span>
+    </div>
+  </section>
+
+  <!-- DOR → RESPOSTA -->
+  <section class="section" id="produto">
+    <div class="wrap">
+      <h2 class="reveal">Toda semana um vencimento tentando passar despercebido.</h2>
+      <p class="section-sub reveal" style="--d:.06s">Quem vive de carteira não perde venda por esquecimento. O MDM Hub troca a planilha e o caderno por um painel que avisa antes.</p>
+      <div class="grid-3">
+        <article class="card reveal"><h3>A apólice que vence no silêncio</h3><p>O painel mostra o que vence nos próximos 7, 15, 30, 45 e 60 dias — e guarda o histórico de cada renovação.</p></article>
+        <article class="card reveal" style="--d:.06s"><h3>O licenciamento que gera multa</h3><p>Cada veículo é acompanhado pelo final da placa, com calendário do Detran-SP e abertura de serviço em 1 clique.</p></article>
+        <article class="card reveal" style="--d:.12s"><h3>A comissão que ninguém conferiu</h3><p>Prêmio, percentual e valor calculados na hora, com status de previsto, pendente e recebido.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTO: bento com telas reais -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2 class="reveal">Um painel, o dia inteiro da corretora.</h2>
+      <div class="bento">
+        <figure class="shot bento-main reveal">
+          <img src="img/dash.webp" alt="Dashboard do MDM Hub com indicadores da corretora" loading="lazy" width="1280" height="648">
+          <figcaption><strong>Dashboard</strong>Prêmios, vendas do mês, apólices ativas e despachante em uma tela.</figcaption>
+        </figure>
+        <figure class="shot reveal" style="--d:.08s">
+          <img src="img/renewals.webp" alt="Tela de renovações com filtros de vencimento e situação de cada apólice" loading="lazy" width="1280" height="648">
+          <figcaption><strong>Renovações</strong>Filtros por prazo e situação, prêmio novo e histórico completo.</figcaption>
+        </figure>
+        <figure class="shot reveal" style="--d:.16s">
+          <img src="img/finance.webp" alt="Financeiro com prêmios vendidos, comissões previstas e recebidas" loading="lazy" width="1280" height="648">
+          <figcaption><strong>Financeiro</strong>Comissão calculada por percentual, com marcação de recebida.</figcaption>
+        </figure>
+        <figure class="shot reveal" style="--d:.24s">
+          <img src="img/policies.webp" alt="Lista de apólices com busca por número, cliente, veículo ou seguradora" loading="lazy" width="1280" height="648">
+          <figcaption><strong>Apólices e busca</strong>Ache por número, cliente, placa ou seguradora — acento não atrapalha.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESPACHANTE -->
+  <section class="section" id="despachante">
+    <div class="wrap split">
+      <div class="split-copy">
+        <h2 class="reveal">O diferencial que a maioria não tem: o despachante.</h2>
+        <p class="section-sub reveal" style="--d:.06s">Transferência, licenciamento, renovação de CNH, débitos e multas — cada serviço com prazo, honorários e protocolo. Quem entra pelo despachante vira cliente de seguro.</p>
+        <ul class="checks reveal" style="--d:.12s">
+          <li>Status de cada serviço, do protocolo ao pagamento</li>
+          <li>Alerta de licenciamento pelo final da placa (SP)</li>
+          <li>Oportunidades de seguro para quem só fez despachante</li>
+        </ul>
+        <a class="btn btn-ghost" href="#assinar">Quero vender os dois serviços</a>
+      </div>
+      <div class="split-visual">
+        <figure class="shot reveal" style="--d:.1s">
+          <img src="img/dispatch.webp" alt="Serviços do despachante com métricas em aberto, honorários do mês e lista por cliente" loading="lazy" width="1280" height="648">
+          <figcaption><strong>Serviços</strong>Concluir e marcar pago na própria linha.</figcaption>
+        </figure>
+        <figure class="shot reveal" style="--d:.2s">
+          <img src="img/licensing.webp" alt="Licenciamento por final de placa com vencimento e situação" loading="lazy" width="1280" height="648">
+          <figcaption><strong>Licenciamento</strong>Vencimento por final de placa, calendário editável por ano.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section-alt" id="como">
+    <div class="wrap">
+      <h2 class="reveal">Do zero ao primeiro vencimento controlado em um dia.</h2>
+      <div class="grid-3 steps">
+        <article class="step reveal"><span>1</span><h3>Cadastre sua carteira</h3><p>Clientes, veículos, seguradoras e apólices — importação assistida pela equipe.</p></article>
+        <article class="step reveal" style="--d:.08s"><span>2</span><h3>O painel assume as datas</h3><p>Renovações, licenciamento e serviços entram na fila de vencimentos automaticamente.</p></article>
+        <article class="step reveal" style="--d:.16s"><span>3</span><h3>Renove, negocie e receba</h3><p>Comissão calculada, alerta de cobrança e histórico que prova o valor da sua carteira.</p></article>
+      </div>
+      <div class="trust reveal" style="--d:.2s">
+        <p>Cada corretora tem banco e acesso próprios. O corretor vê somente a própria carteira — nada cruzado entre corretores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREÇO -->
+  <section class="section" id="preco">
+    <div class="wrap pricing">
+      <div class="pricing-copy">
+        <h2 class="reveal">Preço de lançamento.</h2>
+        <p class="section-sub reveal" style="--d:.06s">Um painel completo para a corretora inteira, com suporte humano para configurar.</p>
+        <ul class="checks reveal" style="--d:.12s">
+          <li>Usuários e corretores ilimitados da sua equipe</li>
+          <li>Clientes, veículos, apólices e renovações sem limite</li>
+          <li>Módulo despachante com licenciamento SP</li>
+          <li>Financeiro de comissões e auditoria completa</li>
+          <li>Marca da sua corretora no sistema</li>
+        </ul>
+      </div>
+      <div class="price-card reveal" style="--d:.1s" id="assinar">
+        <p class="price-label">Oferta de lançamento</p>
+        <p class="price"><sup>R$</sup>67<sup>/mês</sup></p>
+        <p class="price-note">Plano mensal. Sem cobrança de instalação.</p>
+        <a class="btn btn-primary btn-lg btn-block" data-cta href="https://mdm.materialprime.com.br" target="_blank" rel="noopener">Quero assinar agora</a>
+        <p class="price-fine">Acesso no mesmo dia da contratação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="wrap wrap-narrow">
+      <h2 class="reveal">Perguntas rápidas.</h2>
+      <details class="faq reveal"><summary>Preciso instalar alguma coisa?</summary><p>Não. O MDM Hub roda no navegador, do computador ou do celular, com login próprio para cada usuário.</p></details>
+      <details class="faq reveal" style="--d:.06s"><summary>Meus dados ficam separados de outras corretoras?</summary><p>Sim. Cada corretora usa seu próprio banco e sua própria instalação — nada é compartilhado.</p></details>
+      <details class="faq reveal" style="--d:.12s"><summary>Meu corretor vê a carteira inteira?</summary><p>Não. Cada corretor só vê a própria carteira. Clientes, apólices e comissões de outro corretor ficam invisíveis para ele.</p></details>
+      <details class="faq reveal" style="--d:.18s"><summary>Funciona para corretora que também é despachante?</summary><p>Sim. O módulo de despachante nasceu dentro do sistema: transferência, licenciamento, CNH, débitos e multas com status e honorários.</p></details>
+      <details class="faq reveal" style="--d:.24s"><summary>Como entra a minha carteira atual?</summary><p>A equipe configura o sistema com você e orienta a importação de clientes, veículos e apólices.</p></details>
+    </div>
+  </section>
+
+  <!-- FECHO -->
+  <section class="section closing">
+    <div class="wrap closing-grid">
+      <div>
+        <h2 class="reveal">A carteira organizada hoje é a renovação garantida do ano que vem.</h2>
+        <p class="section-sub reveal" style="--d:.06s">Comece com a oferta de lançamento e coloque a corretora no painel.</p>
+      </div>
+      <a class="btn btn-primary btn-lg reveal" style="--d:.12s" data-cta href="https://mdm.materialprime.com.br" target="_blank" rel="noopener">Assinar por R$ 67/mês</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span class="brand-mark" aria-hidden="true">M</span>
+    <p>MDM Hub · Seguros e despachante</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
